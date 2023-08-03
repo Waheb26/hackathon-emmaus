@@ -2,6 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import { Link, useLocation } from "react-router-dom";
 import logo from "/Logo_emmaus_connect2.png";
+import logout from "/logOut_icon.png";
 import "./Navbar.css";
 
 function Navbar({ setIsOpen }) {
@@ -108,7 +109,7 @@ function Navbar({ setIsOpen }) {
         <div className="links_connexion">
           <div className="connexion">
             <button className="logOut_button" onClick={confirmLogout}>
-              <img src="/logOut_icon.png" alt="logo to logout" />
+              <img src={logout} alt="logo to logout" />
             </button>
           </div>
         </div>
