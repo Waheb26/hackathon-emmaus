@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import "./Form.css";
 import calculate from "./calculatePrice";
+import desktopIcon from "/desktop_icon.jpg";
 
 function objectToSearchParams(object) {
   const searchParams = new URLSearchParams();
@@ -110,7 +111,7 @@ export default function LaptopForm() {
       </div>
       <div className="laptop-container">
         <div className="laptop-form-container">
-          <img src="/desktop_icon.jpg" alt="icone ordinateur portable" />
+          <img src={desktopIcon} alt="icone ordinateur portable" />
           <form className="laptop-form-input" onSubmit={handleSubmit}>
             <br />
             <label htmlFor="marque">Marque:</label>

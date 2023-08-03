@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import "./Form.css";
 import calculate from "./calculatePrice";
+import phoneIcon from "/phone_icon.jpg";
 
 function objectToSearchParams(object) {
   const searchParams = new URLSearchParams();
@@ -113,7 +114,7 @@ export default function Form() {
       </div>
       <div className="phone-container">
         <div className="phone-form-container">
-          <img src="/phone_icon.jpg" alt="icone smartphone" />
+          <img src={phoneIcon} alt="icone smartphone" />
           <form className="phone-form-input" onSubmit={handleSubmit}>
             <br />
             <label htmlFor="marque">Marque</label>

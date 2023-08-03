@@ -2,6 +2,9 @@ import { useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
 import { Categories } from "./RefTable";
 import { toast } from "react-toastify";
+import smartphone1 from "/smartphone1.jpg";
+import smartphone2 from "/smartphone2.jpg";
+import smartphone3 from "/smartphone3.jpg";
 import "react-toastify/dist/ReactToastify.css";
 import "./Resume.css";
 
@@ -114,13 +117,13 @@ function Resume() {
         </div>
         <div className="resume_section2_galerieImage">
           <div className="resume_section2_image">
-            <img src="/smartphone1.jpg" alt="" />
+            <img src={smartphone1} alt="" />
           </div>
           <div>
-            <img src="/smartphone2.jpg" alt="" />
+            <img src={smartphone2} alt="" />
           </div>
           <div>
-            <img src="/smartphone3.jpg" alt="" />
+            <img src={smartphone3} alt="" />
           </div>
         </div>
         <div className="resume_section2_button">

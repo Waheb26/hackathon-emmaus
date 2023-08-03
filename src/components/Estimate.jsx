@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import "./Estimate.css";
-
+import desktopIcon from "/desktop_icon.jpg";
+import tabletIcon from "/tablet_icon.jpg";
+import phoneIcon from "/phone_icon.jpg";
 function Estimate() {
   const navigate = useNavigate();
   const handleButtonClick = (route) => {
@@ -15,19 +17,19 @@ function Estimate() {
           className="estimate_button"
           onClick={() => handleButtonClick("/laptopForm")}
         >
-          <img src="/desktop_icon.jpg" alt="" />
+          <img src={desktopIcon} alt="" />
         </button>
         <button
           className="estimate_button"
           onClick={() => handleButtonClick("/tabletForm")}
         >
-          <img src="/tablet_icon.jpg" alt="" />
+          <img src={tabletIcon} alt="" />
         </button>
         <button
           className="estimate_button"
           onClick={() => handleButtonClick("/Form")}
         >
-          <img src="/phone_icon.jpg" alt="" />
+          <img src={phoneIcon} alt="" />
         </button>
       </div>
     </div>
