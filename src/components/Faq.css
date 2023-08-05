@@ -57,7 +57,7 @@
   font-size: 16px;
   background: transparent;
   width: 35dvw;
-  height: 4dvh;
+  height: 7dvh;
   margin-left: -10rem;
   border: solid 3px var(--hover-button-color);
   outline: none;
@@ -108,18 +108,23 @@
     justify-content: initial;
     align-items: initial;
   }
-
+  h1.faq-img-title {
+    font-size: 7dvh;
+  }
   .faq-img-title {
-    margin-left: 30dvw;
     margin-top: 0.2dvh;
+    margin-left: 5dvw;
   }
   .faq_section_main_content {
     margin-top: -34dvh;
+    width: 100%;
   }
 
   .faq_img {
     display: flex;
-    align-items: initial;
+    justify-content: center;
+    width: 70dvw;
+    margin-left: 20dvw;
   }
   .faq_content_div > h2 {
     font-size: large;
@@ -132,11 +137,12 @@
     background-color: var(--background-shadow);
     color: #110e28;
   }
-  .flexbox {
-    margin-left: 5dvw;
-  }
+
   .search > div > input {
-    width: 50dvw;
+    width: 70dvw;
+    margin: auto;
+    height: 8dvh;
+    margin-right: 10dvw;
   }
 }
 

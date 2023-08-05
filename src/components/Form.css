@@ -8,14 +8,11 @@
   margin-bottom: 30dvh;
   color: var(--hover-button-color);
 }
-
 .phone-form-container,
 .tablet-form-container,
 .laptop-form-container {
   width: 80%;
   max-width: 40dvw;
-  margin-right: -40dvw;
-  margin-top: -55dvh;
   padding: 20px;
   border: 2px solid var(--yellow-connect);
   border-radius: 8px;
@@ -114,45 +111,63 @@ h1.laptop-form-title {
   .laptop-container,
   .phone-container,
   .tablet-container {
-    margin-top: 15dvh;
-    margin-right: 30dvw;
+    margin-top: 30dvh;
+    margin-right: 5dvw;
   }
   .laptop-form-container,
   .phone-form-container,
   .tablet-form-container {
     max-width: 100dvw;
-    margin-top: 50dvh;
+    margin-top: 3dvh;
   }
   h1.phone-form-title,
   h1.laptop-form-title {
-    margin-left: 20dvw;
-  }
-  .phone-form,
-  .tablet-form,
-  .laptop-form {
-    margin-top: -5dvh;
+    text-align: center;
+    font-size: large;
   }
   h1.tablet-form-title {
-    margin-left: 18dvw;
+    text-align: center;
+    font-size: large;
+  }
+  h1.phone-form-title,
+  h1.laptop-form-title,
+  h1.tablet-form-title {
+    margin-bottom: 8dvh;
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .laptop-container,
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   .phone-container,
-  .tablet-container {
-    margin-top: -30dvh;
+  .tablet-container,
+  .laptop-container {
+    align-items: initial;
+    justify-content: initial;
+    height: auto;
+    margin-top: 2dvh;
+    margin-left: 30dvw;
   }
-}
-
-@media screen and (min-width: 600px) {
   .phone-form-container,
   .tablet-form-container,
   .laptop-form-container {
-    margin-top: 43dvh;
+    max-width: 60dvw;
   }
 
-  h1.laptop-form-title {
-    margin-left: 8dvh;
+  h1.laptop-form-title,
+  h1.tablet-form-title,
+  h1.phone-form-title {
+    margin-left: 23dvw;
+    margin-bottom: 5dvh;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .phone-container,
+  .tablet-container,
+  .laptop-container {
+    margin-left: 40dvw;
+  }
+  h1.laptop-form-title,
+  h1.tablet-form-title,
+  h1.phone-form-title {
+    margin-left: 5dvw;
   }
 }
