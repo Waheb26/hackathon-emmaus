@@ -8,6 +8,7 @@
   --fc-dimmed: #039b9d8e;
   --yellow-connect: #feab1d;
   --yellow-dimmed-connect: #feab1dc8;
+  --background-shadow: rgba(145, 135, 135, 0.707);
 }
 
 * {

@@ -24,7 +24,8 @@
 
 .estimate_title {
   color: var(--button-color);
-  border-bottom: 1px solid;
+  text-decoration: underline;
+  text-decoration-thickness: 0.2dvh;
   font-size: 2.5em;
   margin-left: -15%;
   margin-top: -5%;
@@ -39,4 +40,26 @@
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+@media screen and (max-width: 600px) {
+  .estimate_main_div {
+    flex-direction: column;
+    justify-content: initial;
+    align-items: initial;
+    gap: 3dvh;
+    margin: 2dvh 0 4dvh 0;
+  }
+
+  .estimate_button {
+    margin-left: 22dvw;
+  }
+
+  .estimate_title {
+    font-size: 2em;
+    margin-left: 18dvw;
+  }
+
+  .estimate_div_button {
+    gap: 20px;
+  }
 }

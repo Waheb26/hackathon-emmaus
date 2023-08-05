@@ -4,14 +4,15 @@ function Faq() {
   return (
     <div className="faq_content">
       <section className="faq_img">
-        <h1>Des Questions ?</h1>
+        <h1 className="faq-img-title">Des Questions ?</h1>
       </section>
       <section className="faq_section_main_content">
         <section className="faq_searchbar">
-          <div class="flexbox">
-            <div class="search">
-              <div>
+          <div className="flexbox">
+            <div className="search">
+              <div className="search-div">
                 <input
+                  className="search-input"
                   type="text"
                   placeholder="Posez votre question.... "
                   required
@@ -22,15 +23,15 @@ function Faq() {
         </section>
         <section className="faq_content2">
           <div className="faq_content_div">
-            <h2>FAQ - Utilisation de l'outil emmaus</h2>
+            <h2>FAQ - Utilisation de l&apos;outil emmaus</h2>
 
             <h3>
-              Q: Comment fonctionne l'estimation de matériel informatique ?
+              Q: Comment fonctionne l&apos;estimation de matériel informatique ?
             </h3>
             <p>
               R: Notre estimation de matériel informatique est basée sur
-              plusieurs facteurs tels que la marque, le modèle, l'âge, l'état
-              général et les spécifications techniques du produit.
+              plusieurs facteurs tels que la marque, le modèle, l&apos;âge,
+              l&apos;état général et les spécifications techniques du produit.
             </p>
 
             <h3>Q: Quels types de produits puis-je estimer ?</h3>
@@ -61,7 +62,7 @@ function Faq() {
             <h3>Q: Puis-je estimer plusieurs produits à la fois ?</h3>
             <p>
               R: Oui, vous pouvez estimer plusieurs produits en utilisant notre
-              formulaire d'estimation en ligne.
+              formulaire d&apos;estimation en ligne.
             </p>
 
             <h3>
