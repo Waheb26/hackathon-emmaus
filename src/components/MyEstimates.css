@@ -1,9 +1,6 @@
 .main-card-container {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 72dvh;
-  gap: 20dvh;
+  height: 100%;
   margin: 0dvh 2dvw 8dvh 0;
 }
 
@@ -13,8 +10,8 @@
   text-decoration-thickness: 0.2dvh;
   font-size: 4dvh;
   width: 40%;
-  margin-left: 4%;
-  margin-top: -5%;
+  margin-left: 8dvw;
+  margin-top: 35dvh;
 }
 
 .myestimate_section1 h1 {
@@ -24,33 +21,27 @@
 .myestimate_section2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 45% 0 0 0;
+  gap: 2dvw;
+  max-width: 50dvw;
+  height: 100%;
 }
 
 .card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  flex-wrap: wrap;
   border-radius: 8px;
-  height: 100%;
-  width: 23vw;
-  padding: 10px;
-  margin: 10px;
+  flex: 1 1 calc(33.33% - 6dvw);
+  width: 20dvw;
+  margin: 4dvh 2dvw 2dvh 4dvw;
   background-color: rgb(242, 237, 228, 0.2);
+  text-align: center;
+  padding: 2dvh;
 }
 
 .card-title {
   margin: 0px;
 }
 
-div.card {
-  padding: 20px;
-  flex-wrap: wrap;
-}
-.cards {
-  margin: auto;
-}
 h3.card-title {
   text-align: center;
   padding-bottom: 2px;
@@ -71,20 +62,20 @@ img {
 }
 @media screen and (max-width: 599px) {
   .main-card-container {
-    flex-direction: column;
-    justify-content: initial;
-    align-items: initial;
     gap: 3dvh;
     margin: 2dvh 0 4dvh 0;
   }
   .myestimate_section1 {
     margin-left: 17dvw;
-  }
-  .myestimate_section2 {
     margin-top: 0;
   }
+  .myestimate_section2 {
+    margin-top: 5dvh;
+    max-width: 80dvw;
+    margin-left: -55dvw;
+  }
   .card {
-    width: 40dvw;
+    width: 50dvw;
     height: auto;
     background-color: var(--background-shadow);
   }

@@ -28,8 +28,8 @@
 
 .navbar_burger {
   margin: -2% 0 0 2%;
-  width: 8dvw;
-  max-width: 14dvw;
+  width: 6dvw;
+  max-width: 10dvw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -51,7 +51,7 @@
 
 .navbar_burger_close {
   display: block;
-  max-width: 30dvw;
+  max-width: 20dvw;
 }
 
 .navbar_burger_close:hover {
@@ -94,7 +94,7 @@
   left: 0;
   width: 25%;
   min-width: 150px;
-  height: 100vh;
+  height: 100dvh;
   background-color: var(--button-color);
   align-items: center;
   justify-content: center;
